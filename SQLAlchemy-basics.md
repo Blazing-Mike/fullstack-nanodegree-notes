@@ -49,3 +49,26 @@ In python
  
  ## A simple Flask App
  This chapter was an exercise, install Flask and Flask-alchemy, then built a simple Hello Flask app
+ 
+ ## Db.Model and defining models
+ Given an instance of the SQLAlchemy class from Flask-SQLAlchemy,
+ 
+ <code>db = SQLAlchemy(app) </code>
+ 
+ - db is an interface for interacting with our database
+ - db.Model lets us create and manipulate data models
+ - db.session lets us create and manipulate database transactions
+
+## Inserting records and using debug mode
+We can insert records into our table using the psql terminal, something like this;
+<code>
+INSERT INTO persons (name) VALUES ('Amy');
+SELECT * from persons;
+      </code>
+      
+  - add the FLASK_DEBUG=true flag to turn debug mode on
+
+
+## Experimenting in Interactive Mode
+
+I had issue with ModuleErrorNotFound: error in python because i don't have those packages installed in my virtual environment, so i had to install them in my virtualenv
