@@ -72,3 +72,20 @@ SELECT * from persons;
 ## Experimenting in Interactive Mode
 
 I had issue with ModuleErrorNotFound: error in python because i don't have those packages installed in my virtual environment, so i had to install them in my virtualenv
+
+## SQLAlchemy Constraints
+- Column constraints ensure data integrity across our database, allowing for database accuracy and consistency
+
+
+## Recap
+- How the components of SQL Alchemy and ORM are structured
+- What are dialects
+- What is a connection pool
+- How does the core engine work
+- How classes and tables are mapped
+- How models are defined
+- How data types are handled
+- How to define constraints
+
+### cheatsheet
+https://github.com/crazyguitar/pysheeet/blob/master/docs/notes/python-sqlalchemy.rst#set-a-database-url
