@@ -21,3 +21,13 @@ Mistakes to our database schema are very expensive to make. The entire app can g
 
 Flask-Migrate (flask_migrate) is our migration manager for migrating SQLALchemy-based database changes
 Flask-Script (flask_script) lets us run migration scripts we defined, from the terminal
+
+
+### Overall Steps to Set Up & Run Migrations
+- Bootstrap database migrate commands: link to the Flask app models and database, link to command-line scripts for running migrations, set up folders to store migrations (as versions of the database)
+- Run initial migration to create tables for SQLAlchemy models, recording the initial schema: ala git init && first git commit. Replaces use of db.create_all()
+- Migrate on changes to our data models
+    - Make changes to the SQLAlchemy models
+    - Allow Flask-Migrate to auto-generate a migration script based on the changes
+    - Fine-tune the migration scripts
+    - Run the migration, aka “upgrade” the database schema by a “version”
