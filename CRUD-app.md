@@ -1,0 +1,4 @@
+- CREATE -> INSERT -> DB.SESSION.ADD(USER1)
+- READ -> SELECT -> User.query.all()
+- UPDATE -> UPDATE -> user1.foo = 'new value'
+- DELETE -> DELETE -> db.session.delete(user1)
