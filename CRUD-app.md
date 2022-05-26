@@ -35,3 +35,12 @@ JSON
 forms take an action (name of the route) and method (route method) to submit data to our server.
 The name attribute on a form control element is the key used to retrieve data from request.get(<key>).
 All forms either define a submit button, or allow the user to hit ENTER on an input to submit the form.
+  
+### Using AJAX to send data to flask
+ -  Data requests are either synchronous or async (asynchronous). Async data requests are requests that get sent to the server and back to the client without a page refresh.
+- fetch is another window object that lets you send HTTP requests
+  <code> fetch(<url-route>, <object of request parameters>) </code>
+    
+ ## Using sessions in controller
+    - Commits can succeed or fail. On fail, we want to rollback the session to avoid potential implicit commits done by the database on closing a connection.
+    
